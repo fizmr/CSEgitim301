@@ -9,6 +9,5 @@ namespace CSEgitim301_DataAccessLayer.Abstract
 {
     public interface IProductDal:IGenericDal<Product>
     {
-        List<Object> GetProductsWithCategory();
     }
 }

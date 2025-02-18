@@ -16,7 +16,7 @@ namespace CSEgitim301_Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmProduct());
+            Application.Run(new Form1());
         }
     }
 }
