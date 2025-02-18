@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSEgitim301_DataAccessLayer.Abstract
+namespace CSEgitim301_BussinesLayer.Abstract
 {
-    public interface IProductDal:IGenericDal<Product>
+    public interface IProductService : IGenericService<Product>
     {
-        List<Object> GetProductsWithCategory();
+        List<Object> TGetProductsWithCategory();
     }
 }

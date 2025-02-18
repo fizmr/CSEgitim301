@@ -56,14 +56,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +103,14 @@
     <ProjectReference Include="..\CSEgitim301_BussinesLayer\CSEgitim301_BussinesLayer.csproj">
       <Project>{d3ac17cd-76e3-440d-b790-1a58a3d93f2d}</Project>
       <Name>CSEgitim301_BussinesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSEgitim301_DataAccessLayer\CSEgitim301_DataAccessLayer.csproj">
+      <Project>{6D88BBAE-CCC3-4D40-95C9-9560144FE59B}</Project>
+      <Name>CSEgitim301_DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSEgitim301_entityLayer\CSEgitim301_EntityLayer.csproj">
+      <Project>{E22E56AB-D2DC-4F68-86A8-012DCD6B7B91}</Project>
+      <Name>CSEgitim301_EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
